@@ -1,24 +1,82 @@
-# Simple Python Web Scraper
+# Python Web Scraper
 
-This project demonstrates a basic Python web scraper.
+A simple Python web scraper that fetches webpage content, extracts text data, and saves it to a CSV file.
 
-## What it does
-- Fetches a webpage
-- Extracts text data
-- Saves it to a CSV file
+## Features
 
-## How to run
-These steps are for macOS. For other operating systems, the virtual environment setup differs; dependency installation and running the script are the same. Please google how to set up a Python virtual environment (venv) for your OS.
+- Fetches webpage content using HTTP requests
+- Extracts and parses text data
+- Exports results to CSV format
+- Built with BeautifulSoup4 and Requests
 
-1. Create and activate a virtual environment:
+## Prerequisites
+
+- Python 3.7+
+- pip (Python package installer)
+
+## Installation
+
+### macOS/Linux
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/2001J/python-web-scraper.git
+   cd python-web-scraper
+   ```
+
+2. **Create and activate a virtual environment**
+   ```bash
    python3 -m venv venv
    source venv/bin/activate
+   ```
 
-2. Install dependencies:
+3. **Install dependencies**
+   ```bash
    pip install -r requirements.txt
+   ```
 
-3. Run script:
-   python scraper.py
+### Windows
 
-4. Deactivate when finished:
-   deactivate
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/2001J/python-web-scraper.git
+   cd python-web-scraper
+   ```
+
+2. **Create and activate a virtual environment**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the scraper:
+```bash
+python scraper.py
+```
+
+The scraped data will be saved to `quotes.csv`.
+
+## Deactivating the Virtual Environment
+
+When you're done, deactivate the virtual environment:
+```bash
+deactivate
+```
+
+## Dependencies
+
+- `beautifulsoup4` - HTML parsing
+- `requests` - HTTP library
+
+See `requirements.txt` for version details.
+
+## License
+
+This project is open source and available under the MIT License.
